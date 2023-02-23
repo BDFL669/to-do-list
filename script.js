@@ -3,10 +3,8 @@ document.querySelector('#push').onclick = function(){
         alert('Please enter a task');
     }
     else{
-        var toDoTask = document.querySelector('#newtask input').value;
-        localStorage.setItem('mytodoValue', doDoTask);
         document.querySelector('#tasks').innerHTML += `<div class="task">
-        <span id="taskname">${mytodoValue}</span>
+        <span id="taskname">${document.querySelector('#newtask input').value}</span>
         <button class="delete">
         <i class="far fa-trash-alt"></i>
         </button>
